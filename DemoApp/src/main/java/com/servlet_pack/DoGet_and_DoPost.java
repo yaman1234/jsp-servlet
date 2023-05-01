@@ -7,6 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class DoGet_and_DoPost extends HttpServlet {
+	
+	
+	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
+		
+		int result = (int) req.getAttribute("sum");
+		int square = result * result;
+		res.getWriter().println("The square is : " + square);
+		res.getWriter().println("service");
+	}
+	
+	
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 

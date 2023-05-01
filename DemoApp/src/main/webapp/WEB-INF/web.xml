@@ -26,5 +26,15 @@
 		<servlet-name>doGet and doPost</servlet-name>
 		<url-pattern>/get_and_post</url-pattern>
 	</servlet-mapping>
+	
+	<!-- RequestDispatcher_demo  -->
+	<servlet>
+		<servlet-name>RequestDispatcher_demo</servlet-name>
+		<servlet-class>com.servlet_pack.RequestDispatcher_demo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RequestDispatcher_demo</servlet-name>
+		<url-pattern>/RequestDispatcher_demo</url-pattern>
+	</servlet-mapping>
 
 </web-app>
