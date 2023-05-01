@@ -7,6 +7,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
 	id="WebApp_ID" version="3.0">
 
+<!-- First servlet  -->
 	<servlet>
 		<servlet-name>My Servlet</servlet-name>
 		<servlet-class>com.servlet_pack.AddServlet</servlet-class>
@@ -14,6 +15,16 @@
 	<servlet-mapping>
 		<servlet-name>My Servlet</servlet-name>
 		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Second Servlet  -->
+	<servlet>
+		<servlet-name>doGet and doPost</servlet-name>
+		<servlet-class>com.servlet_pack.DoGet_and_DoPost</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>doGet and doPost</servlet-name>
+		<url-pattern>/get_and_post</url-pattern>
 	</servlet-mapping>
 
 </web-app>
